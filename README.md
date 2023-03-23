@@ -5,4 +5,4 @@ We are using a simple skeleton python web app for deployment. This repo along wi
 
 This is how it looks during Continuous Integration Process.
 
-![](blueocean.png)
+![](images/blueocean.png)
