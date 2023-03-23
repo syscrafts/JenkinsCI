@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: flask-app
-        image: samratchaudhary/gitops-argo-app:v1
+        image: samratchaudhary/jenkinsCI_argoCD:v1
         resources:
           limits:
             memory: "128Mi"
