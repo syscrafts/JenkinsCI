@@ -3,7 +3,7 @@ pipeline{
     
     environment{
         DOCKERHUB_USERNAME = "samratchaudhary"
-        APP_NAME = "jenkinsCI_argoCD"
+        APP_NAME = "jenkinsci_argocd"
         IMAGE_TAG = "${BUILD_NUMBER}"
         IMAGE_NAME = "${DOCKERHUB_USERNAME}"+"/"+"${APP_NAME}"
         REGISTRY_CREDS = 'dockerhub'
