@@ -21,7 +21,7 @@ pipeline{
             steps{
                 script{
                     git credentialsId: 'github',
-                    url: 'https://github.com/syscrafts/ArgoCD.git',
+                    url: 'https://github.com/syscrafts/JenkinsCI.git',
                     branch: 'main'
                 }
             }
