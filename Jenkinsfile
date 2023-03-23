@@ -21,7 +21,7 @@ pipeline{
             steps{
                 script{
                     git credentialsId: 'github',
-                    url: 'https://github.com/syscrafts/ArgoCD.git',
+                    url: 'https://github.com/syscrafts/JenkinsCI.git',
                     branch: 'main'
                 }
             }
@@ -55,7 +55,7 @@ pipeline{
         stage('Trigger config change pipeline'){
             steps{
                 script{
-                    sh "curl -v -k --user samrat:11706da0dbdabc79169daadbf1777a84fa -X POST -H 'cache-control: no-cache' -H 'content-type: application/x-www-form-urlencoded' --data 'IMAGE_TAG=${IMAGE_TAG}' 'http://35.172.190.161:8080/job/gitops_argo_CD/buildWithParametes?token=config'"
+                    sh "curl -v -k --user samrat:11706da0dbdabc79169daadbf1777a84fa -X POST -H 'cache-control: no-cache' -H 'content-type: application/x-www-form-urlencoded' --data 'IMAGE_TAG=${IMAGE_TAG}' 'http://34.228.254.178:8080/job/gitops_argo_CD/buildWithParametes?token=config'"
                 }
             }
         }
